@@ -11,7 +11,7 @@ const Header = () => {
 
   return ( 
     <>
-      <header id="header" className="bg-preto flex justify-between items-center px-4 h-14 lg:px-12 lg:h-20 relative">
+      <header id="header" className="bg-preto flex justify-between items-center px-4 py-3 lg:px-12 lg:py-0 relative">
         <FaDev 
             size={45} 
             className="text-azul cursor-pointer" 
@@ -37,15 +37,19 @@ const Header = () => {
         <ul className={`text-branco text-sm font-bold flex-col items-center gap-8 absolute top-14 left-0 w-full bg-preto py-6 shadow-lg lg:justify-end lg:static lg:flex lg:flex-row lg:gap-10 lg:bg-transparent lg:shadow-none transition-all duration-500 ${ isMenuOpen ? 'flex' : 'hidden' }`} >
           <NavLink 
             title="Home" 
+            href='#home'
           />
           <NavLink 
             title="Skills"
+            href='#skills'
           />
           <NavLink
             title="Portfolio"
+            href='#'
           />
           <NavLink
             title="About"
+            href='#'
           />
           <li>
             <CVButton 

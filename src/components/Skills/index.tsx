@@ -9,8 +9,7 @@ const Skills = ({ icon: Icon }: Props) => {
     <>
       <li className="flex flex-col items-center cursor-pointer">
         <Icon 
-          size={35} 
-          className="text-branco hover:text-azul transition duration-300" 
+          className="text-branco hover:text-azul size-15 my-10 md:size-10 transition duration-300" 
         />
       </li>
     </>

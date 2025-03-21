@@ -12,10 +12,10 @@ const Home = () => {
   return ( 
     <>
       <Header />
-      <section id="profile" className="bg-preto h-140 lg:h-120 flex justify-around items-center text-branco">
-        <div className="w-140">
-          <h1 className="font-bold text-2xl text-azul mb-4">Desenvolvedor Front-End</h1>
-          <h3 className="font-bold text-base">
+      <section id="home" className="bg-preto py-12 md:py-32 px-10 md:px-0 gap-16 md:gap-0 flex flex-col md:flex-row justify-around items-center text-branco">
+        <div className="md:w-100 lg:w-140">
+          <h1 className="font-bold text-base lg:text-2xl text-azul mb-4">Desenvolvedor Front-End</h1>
+          <h3 className="font-bold text-sm lg:text-base">
             Atualmente estagiário da 704 Apps e estudante de ADS na Estácio. Estou aprofundando meus conhecimentos em desenvolvimento Full Stack na Digital College. Minhas principais tecnologias incluem React, React Native, Typescript, JavaScript e Tailwind.
           </h3>
         </div>
@@ -25,7 +25,7 @@ const Home = () => {
         />
       </section>
       <section id="socialMedia" className="bg-azul rounded-r-3xl fixed left-0 top-1/2 transform -translate-y-1/2">
-        <ul className="flex flex-col gap-4 py-6 px-3">
+        <ul className="flex flex-col gap-4 py-6 px-1.5 md:px-3">
           <SocialMedia 
             icon={FaLinkedinIn} 
             link='https://www.linkedin.com/in/leonardorbessa/'
@@ -45,7 +45,7 @@ const Home = () => {
         </ul>
       </section>
       <section id="skills" className="bg-cinza">
-        <ul className="h-35 flex row justify-around items-center">
+        <ul className="py-4 lg:py-12 grid grid-cols-2 md:flex md:flex-row justify-around items-center">
           <Skills icon={FaHtml5} />
           <Skills icon={FaCss3Alt} />
           <Skills icon={SiBootstrap} />
@@ -57,6 +57,9 @@ const Home = () => {
           <Skills icon={SiExpress} />
           <Skills icon={SiPython} />
         </ul>
+      </section>
+      <section id="portfolio" className="">
+
       </section>
     </>
   );

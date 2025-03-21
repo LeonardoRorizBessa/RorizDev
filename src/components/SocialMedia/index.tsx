@@ -11,8 +11,7 @@ const SocialMedia = ({ icon: Icon, link }: Props) => {
       <li className="flex flex-col items-center cursor-pointer">
         <a href={link}>
           <Icon 
-            size={25} 
-            className="text-preto hover:text-branco transition duration-300" 
+            className="text-preto hover:text-branco size-6 transition duration-300" 
           />
         </a>
       </li>

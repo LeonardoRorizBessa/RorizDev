@@ -1,13 +1,14 @@
 interface Props {
   title: string;
+  href: string;
 }
 
-const NavLink = ({title}: Props) => {
+const NavLink = ({title, href}: Props) => {
   return ( 
     <>
       <li>
         <a 
-          href="#" 
+          href={href} 
           className="nav-link"
         >
           {title}
