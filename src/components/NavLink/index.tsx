@@ -3,7 +3,10 @@ interface Props {
   href: string;
 }
 
-const NavLink = ({title, href}: Props) => {
+const NavLink = ({
+  title, 
+  href,
+}: Props) => {
   return ( 
     <>
       <li>

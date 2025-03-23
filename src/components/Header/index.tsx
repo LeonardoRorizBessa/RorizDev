@@ -37,19 +37,15 @@ const Header = () => {
         <ul className={`text-branco text-sm font-bold flex-col items-center gap-8 absolute top-14 left-0 w-full bg-preto py-6 shadow-lg lg:justify-end lg:static lg:flex lg:flex-row lg:gap-10 lg:bg-transparent lg:shadow-none transition-all duration-500 ${ isMenuOpen ? 'flex' : 'hidden' }`} >
           <NavLink 
             title="Home" 
-            href='#home'
+            href='#'
           />
           <NavLink 
             title="Skills"
             href='#skills'
           />
           <NavLink
-            title="Portfolio"
-            href='#'
-          />
-          <NavLink
-            title="About"
-            href='#'
+            title="Journey"
+            href="#journey"
           />
           <li>
             <CVButton 

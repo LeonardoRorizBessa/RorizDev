@@ -3,11 +3,13 @@ interface Props {
   fileUrl: string;
 }
 
-const CVButton = ({title, fileUrl}: Props) => {
+const CVButton = ({
+  title, 
+  fileUrl,
+}: Props) => {
   return (
     <button 
       className="relative py-2 px-6 overflow-hidden z-20 text-white hover:text-preto cursor-pointer transition-all duration-500 group"
-      
     >
       <a 
         href={fileUrl} 
