@@ -14,7 +14,7 @@ const SocialMedia = ({
   return ( 
     <>
       <li className="flex flex-col items-center cursor-pointer">
-        <a href={link}>
+        <a href={link} target="_blank" rel="noopener noreferrer">
           <Icon 
             className={`size-6 transition duration-300 
               ${footer ? "text-branco hover:text-azul" : "text-preto hover:text-branco"}`
