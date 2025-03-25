@@ -50,7 +50,7 @@ const Header = () => {
           <li>
             <CVButton 
               title='Download CV'
-              fileUrl='/leonardo-resume.pdf'
+              fileUrl='/Leonardo-Roriz-Resume.pdf'
             />
           </li>
         </ul>
