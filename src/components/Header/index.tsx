@@ -1,10 +1,10 @@
-import { useState } from 'react';
+import { useState } from 'react'
 import './index.css'
-import { FaDev } from 'react-icons/fa';
+import { FaDev } from 'react-icons/fa'
 import menuOpen from '../../assets/menu.png'
 import menuClose from '../../assets/cross.png'
 import CVButton from '../CVButton'
-import NavLink from '../NavLink';
+import NavLink from '../NavLink'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,9 +13,9 @@ const Header = () => {
     <>
       <header id="header" className="bg-preto flex justify-between items-center px-4 py-3 lg:px-12 lg:py-0 relative">
         <FaDev 
-            size={45} 
-            className="text-azul cursor-pointer" 
-          />
+          size={45} 
+          className="text-azul cursor-pointer" 
+        />
         <button 
           onClick={() => setIsMenuOpen(true)} 
           className={`w-8 lg:hidden ${isMenuOpen ? 'hidden' : 'block'}`}
@@ -50,7 +50,7 @@ const Header = () => {
           <li>
             <CVButton 
               title='Download CV'
-              fileUrl='/Leonardo-Roriz-Resume.pdf'
+              fileUrl='/Leonardo-Bessa_CV.pdf'
             />
           </li>
         </ul>

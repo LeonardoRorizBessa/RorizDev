@@ -3,6 +3,7 @@ import { SiTailwindcss, SiBootstrap, SiReact, SiPython, SiJavascript, SiTypescri
 import { FaLinkedinIn } from "react-icons/fa6"
 import { TbBrandGithubFilled } from "react-icons/tb"
 import { BiLogoGmail, BiLogoInstagramAlt } from "react-icons/bi"
+import { AiOutlineAntDesign } from "react-icons/ai"
 import { motion } from "framer-motion"
 import Header from "../../components/Header"
 import Profile from "../../components/Profile"
@@ -36,7 +37,7 @@ const Home = () => {
         >
           <Profile 
             name="Leonardo Roriz"
-            perfilImage="https://media.licdn.com/dms/image/v2/D4D03AQGTGhbn9vkE7A/profile-displayphoto-shrink_400_400/B4DZW5RIduHIAg-/0/1742570031539?e=1747872000&v=beta&t=kDxTPoVa23Wxqex3OL27bAWocU4Pbr2RoT323DgIPcU"
+            perfilImage="https://media.licdn.com/dms/image/v2/D4D03AQGTGhbn9vkE7A/profile-displayphoto-shrink_800_800/B4DZW5RIduHIAc-/0/1742570031539?e=1754524800&v=beta&t=wVqwt7fTjonOHMiriy_UrisyGgXk2Ctt3FpOS4m1cB0"
           />
         </motion.div>
       </section>
@@ -69,6 +70,7 @@ const Home = () => {
           <Skills icon={SiReact} />
           <Skills icon={SiTypescript} />
           <Skills icon={SiJavascript} />
+          <Skills icon={AiOutlineAntDesign} />
           <Skills icon={FaNodeJs} />
           <Skills icon={SiExpress} />
           <Skills icon={SiPython} />
