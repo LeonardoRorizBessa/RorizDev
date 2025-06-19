@@ -9,9 +9,11 @@ const Journey = () => {
           <GiStairsGoal size={24}/>
           Journey
         </h1>
-        <div className="relative w-full">
-          <div className="hidden md:flex md:absolute left-1/2 w-1 bg-azul h-full -translate-x-1/2"></div>
-          <Experience />
+        <div className="flex relative w-full">
+          <div className="hidden md:flex md:absolute w-1 bg-azul h-full -translate-x-1/2 rounded-full"></div>
+          <div className="flex flex-col gap-4 md:gap-6 md:ml-6">
+            <Experience />
+          </div>
         </div>
       </section>
     </>

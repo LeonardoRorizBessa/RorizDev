@@ -17,7 +17,7 @@ const About = () => {
             About
           </h1>
           <button className="relative py-2 px-6 overflow-hidden z-20 font-bold text-md text-white hover:text-preto cursor-pointer transition-all duration-500 group">
-            <a href="/Leonardo-Bessa_CV.pdf" download>
+            <a href="/Leonardo-Roriz-CV.pdf" download>
               Download CV
               <span className="absolute h-1 w-full bg-azul rounded-t-full bottom-0 left-0 transition-all duration-500 group-hover:h-[200%] z-[-1]"></span>
             </a>
@@ -40,7 +40,7 @@ const About = () => {
             />
           </motion.div>
           <motion.div
-            className="flex flex-col items-center lg:items-start text-branco font-bold bg-cinza w-full lg:h-100 rounded-2xl p-4"
+            className="flex flex-col items-center lg:items-start text-branco font-bold bg-cinza w-full lg:h-100 rounded-2xl p-6"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}

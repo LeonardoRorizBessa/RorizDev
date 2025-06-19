@@ -7,12 +7,10 @@ const Experience = () => {
       {data.Experiences.map((DATA, index) => (
         <motion.div
           key={index}
-          className={`relative md:w-[47%] p-6 mb-8 md:mb-0 rounded-2xl shadow-lg bg-cinza ${
-            index % 2 === 0 ? "left-timeline ml-0 mr-auto" : "right-timeline ml-auto mr-0"
-          }`}
-          initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, delay: index * 0.2 }}
+          className="w-[full] p-6 rounded-2xl bg-cinza"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
           viewport={{ once: true, amount: 0.5 }}
         >
           <div className="flex row items-center">
