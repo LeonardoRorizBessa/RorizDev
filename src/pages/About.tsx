@@ -5,43 +5,70 @@ import { SiTailwindcss, SiBootstrap, SiReact, SiPython, SiJavascript, SiTypescri
 import { AiOutlineAntDesign } from "react-icons/ai"
 import Skills from "../components/Skills"
 import { PiUserListFill } from "react-icons/pi"
+import hero from "../assets/hero.png"
 
 const About = () => {
   return ( 
     <>
-      <section className="flex flex-col justify-between text-branco font-bold">
-        <h1 className="flex justify-start items-center gap-4 text-3xl mb-12">
-          <PiUserListFill size={24} />
-          About
-        </h1>
-      </section>
-      <section className="h-full gap-16 md:gap-0 flex flex-col md:flex-row justify-around items-center text-branco">
-        <motion.div
-          className="md:w-100 lg:w-140"
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
-          <h1 className="font-bold text-lg md:text-2xl text-azul mb-4">Desenvolvedor Front-End</h1>
-          <h3 className="font-bold text-base lg:text-base">
-            Atualmente atuando como Freelancer e estudante de ADS na Estácio. Estou aprofundando meus conhecimentos em desenvolvimento Full Stack na Digital College. Minhas principais tecnologias incluem React, React Native, Typescript, JavaScript e Tailwind.
-          </h3>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
-          <Profile 
-            name="Leonardo Roriz"
-            perfilImage="https://media.licdn.com/dms/image/v2/D4D03AQGTGhbn9vkE7A/profile-displayphoto-shrink_800_800/B4DZW5RIduHIAc-/0/1742570031539?e=1754524800&v=beta&t=wVqwt7fTjonOHMiriy_UrisyGgXk2Ctt3FpOS4m1cB0"
-          />
-        </motion.div>
+      <section className="flex flex-col justify-between text-branco">
+        <div className="flex justify-between items-center mb-12">
+          <h1 className="flex justify-start items-center gap-4 text-3xl font-bold">
+            <PiUserListFill size={24} />
+            About
+          </h1>
+          <button className="relative py-2 px-6 overflow-hidden z-20 font-bold text-md text-white hover:text-preto cursor-pointer transition-all duration-500 group">
+            <a href="/Leonardo-Bessa_CV.pdf" download>
+              Download CV
+              <span className="absolute h-1 w-full bg-azul rounded-t-full bottom-0 left-0 transition-all duration-500 group-hover:h-[200%] z-[-1]"></span>
+            </a>
+          </button>
+        </div>
+        <div className="flex flex-col lg:flex-row justify-between items-center gap-6 mb-6">
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <Profile 
+              name="Leonardo Roriz"
+              age="27"
+              job="Front-End"
+              graduation="ADS - Estácio"
+              location="Fortaleza - CE"
+              perfilImage={hero}
+            />
+          </motion.div>
+          <motion.div
+            className="flex flex-col items-center lg:items-start text-branco font-bold bg-cinza w-full lg:h-100 rounded-2xl p-4"
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <div>
+              <span className="text-[#d19a66] text-xs xl:text-base">&lt;span&gt;</span>
+              <span className="text-xs xl:text-base"> Olá, me chamo Leonardo Roriz. </span>
+              <span className="text-[#d19a66] text-xs xl:text-base">&lt;/span&gt;</span>
+            </div>
+            <br />
+            <div>
+              <span className="text-azul text-xl xl:text-3xl">{`{Desenvolvedor Front-End}`}</span>
+            </div>
+            <br />
+            <div>
+              <span className="text-[#d19a66] text-xs xl:text-base">&lt;p&gt; </span>
+              <span className="text-xs xl:text-base">
+                Atualmente atuando como Freelancer e estudante de Análise e Desenvolvimento de Sistemas na Estácio. Estou aprofundando meus conhecimentos em desenvolvimento Full Stack na Digital College e também trabalho como motorista de aplicativo.<br />
+                Minhas principais tecnologias incluem React, React Native, Typescript, JavaScript e Tailwind.
+              </span>
+              <span className="text-[#d19a66] text-xs xl:text-base"> &lt;/p&gt;</span>
+            </div>
+          </motion.div>
+        </div>
       </section>
       <section className="bg-cinza rounded-2xl">
-        <ul className="py-14 grid grid-cols-2 md:flex md:flex-row justify-around items-center">
+        <ul className="flex flex-row justify-around items-center px-2 py-10 lg:py-14">
           <Skills icon={FaHtml5} />
           <Skills icon={FaCss3Alt} />
           <Skills icon={SiBootstrap} />
