@@ -1,5 +1,5 @@
-import { TbBrandGithubFilled } from "react-icons/tb";
-import { SiVercel } from "react-icons/si";
+import { TbBrandGithubFilled } from "react-icons/tb"
+import { SiVercel } from "react-icons/si"
 
 interface ProjectProps {
   title: string;

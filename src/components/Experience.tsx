@@ -1,7 +1,5 @@
-import data from "../../api/api.json"
-import './index.css'
+import data from "../api/api.json"
 import { motion } from "framer-motion"
-
 
 const Experience = () => {
   return (
@@ -10,7 +8,7 @@ const Experience = () => {
         <motion.div
           key={index}
           className={`relative md:w-[47%] p-6 mb-8 md:mb-0 rounded-2xl shadow-lg bg-cinza ${
-            index % 2 === 0 ? "left-timeline" : "right-timeline"
+            index % 2 === 0 ? "left-timeline ml-0 mr-auto" : "right-timeline ml-auto mr-0"
           }`}
           initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
           whileInView={{ opacity: 1, x: 0 }}

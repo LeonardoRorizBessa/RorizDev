@@ -1,25 +1,19 @@
-import { IconType } from "react-icons";
+import { IconType } from "react-icons"
 
 interface Props {
   icon: IconType;
   link: string;
-  footer?: boolean;
 }
 
 const SocialMedia = ({ 
   icon: Icon, 
   link, 
-  footer = false ,
 }: Props) => {
   return ( 
     <>
       <li className="flex flex-col items-center cursor-pointer">
         <a href={link} target="_blank" rel="noopener noreferrer">
-          <Icon 
-            className={`size-6 transition duration-300 
-              ${footer ? "text-branco hover:text-azul" : "text-preto hover:text-branco"}`
-            }
-          />
+          <Icon className="text-branco hover:text-azul size-6 transition duration-300" />
         </a>
       </li>
     </>

@@ -11,13 +11,13 @@ const Skills = ({
   return ( 
     <>
       <motion.li
-        className="flex flex-col items-center cursor-pointer"
+        className="flex flex-col items-center"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
         viewport={{ once: true, amount: 1 }}
       >
-        <Icon className="text-branco hover:text-azul size-10 my-4 md:my-10 transition duration-300" />
+        <Icon className="text-branco hover:text-azul size-10 transition duration-300" />
       </motion.li>
     </>
   );

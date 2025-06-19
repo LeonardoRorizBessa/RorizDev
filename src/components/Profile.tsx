@@ -25,6 +25,12 @@ const Profile = ({
           />
           <p className="text-base font-semibold">Fortaleza - CE</p>
         </div>
+        <button className="relative mt-3 py-2 px-6 overflow-hidden z-20 font-bold text-md text-white hover:text-preto cursor-pointer transition-all duration-500 group">
+          <a href="/Leonardo-Bessa_CV.pdf" download>
+            Download CV
+            <span className="absolute h-1 w-full bg-azul rounded-t-full bottom-0 left-0 transition-all duration-500 group-hover:h-[200%] z-[-1]"></span>
+          </a>
+        </button>
       </div>
     </>
    );
