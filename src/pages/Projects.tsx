@@ -5,15 +5,20 @@ import imgPapelePersonalizados from "../assets/imgsProjects/papele-personalizado
 import tiamateCoffee from "../assets/imgsProjects/tiamate-coffee.png"
 import tiamateDashboard from "../assets/imgsProjects/tiamate-dashboard.png"
 import { FaFolderOpen } from "react-icons/fa"
+import MenuMobile from "../components/MenuMobile"
 
 const Projects = () => {
   return ( 
     <>
       <section className="flex flex-col justify-between text-branco font-bold">
-        <h1 className="flex justify-start items-center gap-4 text-3xl mb-12">
-          <FaFolderOpen size={24} />
-          Projects
-        </h1>
+        <div className="flex items-center justify-between mb-12">
+          <h1 className="flex items-center gap-4 text-3xl">
+            <FaFolderOpen size={24} />
+            Projects
+          </h1>
+          <MenuMobile />
+        </div>
+        
         <motion.ul
           className="grid grid-cols-1 md:grid-cols-2 gap-6"
           initial={{ opacity: 0, y: 50 }}

@@ -6,6 +6,7 @@ import { AiOutlineAntDesign } from "react-icons/ai"
 import Skills from "../components/Skills"
 import { PiUserListFill } from "react-icons/pi"
 import hero from "../assets/hero.png"
+import MenuMobile from "../components/MenuMobile"
 
 const About = () => {
   return ( 
@@ -16,12 +17,7 @@ const About = () => {
             <PiUserListFill size={24} />
             About
           </h1>
-          <button className="relative py-2 px-6 overflow-hidden z-20 font-bold text-md text-white hover:text-preto cursor-pointer transition-all duration-500 group">
-            <a href="/Leonardo-Roriz-CV.pdf" download>
-              Download CV
-              <span className="absolute h-1 w-full bg-azul rounded-t-full bottom-0 left-0 transition-all duration-500 group-hover:h-[200%] z-[-1]"></span>
-            </a>
-          </button>
+          <MenuMobile />
         </div>
         <div className="flex flex-col lg:flex-row justify-between items-center gap-6 mb-6">
           <motion.div
